@@ -12,8 +12,10 @@
     click()
     {
         this.n++;
-        if(this.n < 100)
-            document.getElementById('abc').innerHTML = 'U clicked me ' + this.n + ' times';
+        if(this.n == 1)
+            document.getElementById('abc').innerHTML = 'U clicked me ' + this.n + ' time';
+        else if(this.n < 10)
+            document.getElementById('abc').innerHTML = 'U clicked me ' + this.n + ' time';
         else
             document.getElementById('abc').innerHTML = 'WOW! you have a lot of patience!! :)';
         console.log(this.n);
