@@ -1,47 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>K Rahul Reddy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
-<script>
-    var button = {
-    n : 0,
-    click()
-    {
-        this.n++;
-        if(this.n == 1)
-            document.getElementById('abc').innerHTML = 'U clicked me ' + this.n + ' time';
-        else if(this.n < 10)
-            document.getElementById('abc').innerHTML = 'U clicked me ' + this.n + ' times';
-        else
-            document.getElementById('abc').innerHTML = 'WOW! you have a lot of patience!! :)';
-        console.log(this.n);
-    }
-    }
-</script>
-<style>
-    body{
-        background: rgb(90, 90, 90);
-        color : whitesmoke;
-    }
-    h1{
-        color : black;
-        font-family: Helvetica, sans-serif;
-    }
-    button
-    {
-        backface-visibility: visible;
-        color : rebeccapurple;
-    }
-</style>
+
 <body>
-    <h1>
-        First Page
-    </h1>
-    Hi!!
-    <br><button id = 'abc' type = "button" onclick="button.click()">Click me</button>
+    <div class="first-block">
+        <!-- <img src="images/1.jpg"> -->
+        <p class="line-1 anim-typewriter">Hello, World!! Welcome to my site. I hope you find what you are looking for :P</p>
+    </div>
+    <div class="first-block">
+        <!-- <img src="images/1.jpg"> -->
+        <!-- <h1>Hello, World</h1> -->
+    </div>
 </body>
+
 </html>

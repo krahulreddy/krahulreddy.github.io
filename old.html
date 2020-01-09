@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+    var button = {
+    n : 0,
+    click()
+    {
+        this.n++;
+        if(this.n == 1)
+            document.getElementById('abc').innerHTML = 'U clicked me ' + this.n + ' time';
+        else if(this.n < 10)
+            document.getElementById('abc').innerHTML = 'U clicked me ' + this.n + ' times';
+        else
+            document.getElementById('abc').innerHTML = 'WOW! you have a lot of patience!! :)';
+        console.log(this.n);
+    }
+    }
+</script>
+<style>
+    body{
+        background: rgb(90, 90, 90);
+        color : whitesmoke;
+    }
+    h1{
+        color : black;
+        font-family: Helvetica, sans-serif;
+    }
+    button
+    {
+        backface-visibility: visible;
+        color : rebeccapurple;
+    }
+</style>
+<body>
+    <h1>
+        First Page
+    </h1>
+    Hi!!
+    <br><button id = 'abc' type = "button" onclick="button.click()">Click me</button>
+</body>
+</html>
