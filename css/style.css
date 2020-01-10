@@ -6,7 +6,7 @@ body {
     /* background-size: 1225.52px 689.2px; */
     background-color: transparent;
     /* background-position: -132.261px -120.72px; */
-    min-height: 746px;
+    /*min-height: cover;*/
     padding: 10%;
     /* padding-bottom: 245px; */
     background-attachment: fixed;
@@ -77,8 +77,8 @@ body {
     width: 50em;
     white-space:nowrap;
     overflow:hidden;
-    -webkit-animation: type 3s steps(40, end);
-    animation: type 3s steps(40, end);
+    -webkit-animation: type 4s steps(40, end);
+    animation: type 4s steps(40, end);
 }
 
 .css-typing:nth-child(2)
@@ -86,10 +86,10 @@ body {
     white-space:nowrap;
     overflow:hidden;    
     opacity:0;
-    -webkit-animation: type 3s steps(50, end);
-    animation: type2 3s steps(50, end);
-    -webkit-animation-delay: 6s; 
-    animation-delay: 3s;
+    -webkit-animation: type 3s steps(30, end);
+    animation: type2 3s steps(30, end);
+    -webkit-animation-delay: 3s;
+    animation-delay: 4s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
@@ -97,22 +97,22 @@ body {
     white-space:nowrap;
     overflow:hidden;
     opacity:0;
-    -webkit-animation: type 3s steps(50, end);
-    animation: type2 3s steps(50, end);
-    -webkit-animation-delay: 0s; 
+    -webkit-animation: type 3s steps(30, end);
+    animation: type3 2s steps(30, end);
+    -webkit-animation-delay: 5s;
     animation-delay: 6s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 .css-typing:nth-child(4){
-    font-size: 10px !important;
+    font-size: 14px !important;
     white-space:nowrap;
     overflow:hidden;
     opacity:0;
     -webkit-animation: type 9s steps(40, end);
-    animation: type4 5s steps(40, end);
-    -webkit-animation-delay: 10s; 
-    animation-delay: 12s;
+    animation: type4 1s steps(40, end);
+    -webkit-animation-delay: 10s;
+    animation-delay: 9s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
@@ -126,9 +126,9 @@ body {
     from { width: 0; }
 }
 
-span{
+/*span{
   animation: blink 1s infinite;
-}
+}*/
 
 @keyframes type2{
 0%{width: 0;}
