@@ -112,7 +112,7 @@ body {
     -webkit-animation: type 9s steps(40, end);
     animation: type4 1s steps(40, end);
     -webkit-animation-delay: 10s;
-    animation-delay: 9s;
+    animation-delay: 8s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
