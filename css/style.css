@@ -4,13 +4,13 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     /* background-size: 1225.52px 689.2px; */
-    background-color: transparent;
+    /*background-color: transparent;*/
     /* background-position: -132.261px -120.72px; */
     /*min-height: cover;*/
     padding: 10%;
     /* padding-bottom: 245px; */
     background-attachment: fixed;
-    height: auto;
+    height: 100%;
     width: auto;
 }
 
