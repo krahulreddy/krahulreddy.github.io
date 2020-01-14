@@ -1,14 +1,14 @@
 :root {
-    --p-color: #3E6FAF;
+    --p-color: #0072c6;
     --h-color: #fff;
 }
 
 body {
-    background-image: url('../images/1.jpg');
+/*    background-image: url('../images/bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /* background-size: 1225.52px 689.2px; */
+*/    /* background-size: 1225.52px 689.2px; */
     /*background-color: transparent;*/
     /* background-position: -132.261px -120.72px; */
     /*min-height: cover;*/
@@ -40,6 +40,7 @@ h2 {
 .img-src { 
     position: absolute;
     background:url(../images/1.jpg) center center;
+    /*background:url(../images/bg.png) center center;*/
     background-size: cover;
     top: -10%;
     bottom: 10%;
@@ -72,6 +73,20 @@ h2 {
     /*width: 50em;*/
     /*white-space:nowrap;*/
     /*overflow:hidden;*/
+}
+
+.card a{
+    color: #000;
+}
+
+.card a:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+.card-body img{
+    height: 15px;
+    width: 15px;
 }
 
 .heading {
