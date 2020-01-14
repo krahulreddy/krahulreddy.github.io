@@ -1,9 +1,11 @@
-:root {
+/*:root {
     --p-color: #0072c6;
     --h-color: #fff;
 }
-
+*/
 body {
+    --p-color: #0072c6;
+    --h-color: #fff;
 /*    background-image: url('../images/bg.png');
     background-size: cover;
     background-repeat: no-repeat;
