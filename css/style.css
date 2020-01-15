@@ -77,6 +77,17 @@ h2 {
     /*overflow:hidden;*/
 }
 
+
+/*Section*/
+.section{
+    margin-top: 50%;
+}
+
+/*cards*/
+
+.card p{
+    color: #00FFAB;
+}
 .card a{
     color: #000;
 }
@@ -89,6 +100,31 @@ h2 {
 .card-body img{
     height: 15px;
     width: 15px;
+}
+
+.c1{
+    background-color:#F25022 !important;
+}
+
+.c2{
+    background-color:#7FBA00 !important;
+}
+
+.c3{
+    background-color:#00A4EF !important;
+}
+
+.c4{
+    background-color:#FFB900 !important;
+}
+
+.c5{
+    background-color:#F5F5F5 !important;
+}
+
+.c1, .c2, .c3, .c4, .c5, 
+.c6{
+    background-color:#737373 !important;
 }
 
 .heading {
