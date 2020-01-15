@@ -3,14 +3,16 @@
     --h-color: #fff;
 }
 */
+
 body {
     --p-color: #0072c6;
     --h-color: #fff;
-/*    background-image: url('../images/bg.png');
+    /*    background-image: url('../images/bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-*/    /* background-size: 1225.52px 689.2px; */
+*/
+    /* background-size: 1225.52px 689.2px; */
     /*background-color: transparent;*/
     /* background-position: -132.261px -120.72px; */
     /*min-height: cover;*/
@@ -20,6 +22,7 @@ body {
     height: 100%;
     width: auto;
 }
+
 p {
     color: var(--p-color);
 }
@@ -29,38 +32,38 @@ h2 {
 }
 
 #blurred-image-container {
-    display:block;
-    padding:0;
-    position:fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    z-index:-1;
+    display: block;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
 }
 
-.img-src { 
+.img-src {
     position: absolute;
-    background:url(../images/1.jpg) center center;
+    background: url(../images/1.jpg) center center;
     /*background:url(../images/bg.png) center center;*/
     background-size: cover;
     top: -10%;
     bottom: 10%;
     left: -10%;
     right: 10%;
-    width:120%;
-    height:120%;
+    width: 120%;
+    height: 120%;
 }
 
 .img-src.blurred-image {
-    opacity:0;
+    opacity: 0;
     -webkit-filter: blur(20px) brightness(0.2);
     -ms-filter: blur(20px) brightness(0.2);
     -o-filter: blur(20px) brightness(0.2);
     filter: blur(20px) brightness(0.2);
 }
 
-.first-block img{
+.first-block img {
     /*min-height: 746px;*/
     /*padding: 10%;*/
     height: 100%;
@@ -79,52 +82,71 @@ h2 {
 
 
 /*Section*/
-.section{
-    margin-top: 50%;
+
+.section {
+    padding-top: 20%;
 }
+
+@media (min-width:481px) {
+    .section1 {
+        margin-top: 50%;
+    }
+}
+
+@media (max-width:480px) {
+    .section1 {
+        margin-top: 120%;
+    }
+}
+
 
 /*cards*/
 
-.card p{
+.card p {
     color: #00FFAB;
 }
-.card a{
+
+.card a {
     color: #000;
 }
 
-.card a:hover{
+.card a:hover {
     color: #000;
     text-decoration: none;
 }
 
-.card-body img{
+.card-body img {
     height: 15px;
     width: 15px;
 }
 
-.c1{
-    background-color:#F25022 !important;
+.c1 {
+    background-color: #F25022 !important;
 }
 
-.c2{
-    background-color:#7FBA00 !important;
+.c2 {
+    background-color: #7FBA00 !important;
 }
 
-.c3{
-    background-color:#00A4EF !important;
+.c3 {
+    background-color: #00A4EF !important;
 }
 
-.c4{
-    background-color:#FFB900 !important;
+.c4 {
+    background-color: #FFB900 !important;
 }
 
-.c5{
-    background-color:#F5F5F5 !important;
+.c5 {
+    background-color: #F5F5F5 !important;
 }
 
-.c1, .c2, .c3, .c4, .c5, 
-.c6{
-    background-color:#737373 !important;
+.c1,
+.c2,
+.c3,
+.c4,
+.c5,
+.c6 {
+    background-color: #737373 !important;
 }
 
 .heading {
@@ -136,23 +158,26 @@ h2 {
     color: rgb(209, 190, 149);
 }
 
+
 /* Google Fonts */
+
+
 /* Global */
-.line-1{
+
+.line-1 {
     position: relative;
-    top: 50%;  
+    top: 50%;
     width: 24em;
     margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
+    border-right: 2px solid rgba(255, 255, 255, .75);
     font-size: 180%;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%);    
+    transform: translateY(-50%);
 }
 
-@media (min-width: 480px){
-
+@media (min-width: 480px) {
     .first-block p {
         font-family: monospace;
         font-weight: bolder;
@@ -162,22 +187,19 @@ h2 {
         /*white-space:nowrap;*/
         /*overflow:hidden;*/
     }
-    .css-typing
-    {   
+    .css-typing {
         font-family: "Courier";
         font-size: 20px;
         width: 50em;
-        white-space:nowrap;
-        overflow:hidden;
+        white-space: nowrap;
+        overflow: hidden;
         -webkit-animation: type 4s steps(40, end);
         animation: type 4s steps(40, end);
     }
-
-    .css-typing:nth-child(2)
-    {
-        white-space:nowrap;
-        overflow:hidden;    
-        opacity:0;
+    .css-typing:nth-child(2) {
+        white-space: nowrap;
+        overflow: hidden;
+        opacity: 0;
         -webkit-animation: type 3s steps(30, end);
         animation: type2 3s steps(30, end);
         -webkit-animation-delay: 3s;
@@ -185,10 +207,10 @@ h2 {
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
     }
-    .css-typing:nth-child(3){
-        white-space:nowrap;
-        overflow:hidden;
-        opacity:0;
+    .css-typing:nth-child(3) {
+        white-space: nowrap;
+        overflow: hidden;
+        opacity: 0;
         -webkit-animation: type 3s steps(30, end);
         animation: type3 2s steps(30, end);
         -webkit-animation-delay: 5s;
@@ -196,11 +218,11 @@ h2 {
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
     }
-    .css-typing:nth-child(4){
+    .css-typing:nth-child(4) {
         font-size: 14px !important;
-        white-space:nowrap;
-        overflow:hidden;
-        opacity:0;
+        white-space: nowrap;
+        overflow: hidden;
+        opacity: 0;
         -webkit-animation: type 9s steps(40, end);
         animation: type4 1s steps(40, end);
         -webkit-animation-delay: 10s;
@@ -208,94 +230,163 @@ h2 {
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
     }
-
-     @keyframes type{
-        from { width: 0; }
+    @keyframes type {
+        from {
+            width: 0;
+        }
     }
-
-    @-webkit-keyframes type{
-        from { width: 0; }
+    @-webkit-keyframes type {
+        from {
+            width: 0;
+        }
     }
-
     /*span{
       animation: blink 1s infinite;
     }*/
-
-    @keyframes type2{
-    0%{width: 0;}
-    from {opacity:0;}
-    1%{opacity:1;}
-    to{opacity:1;}
-    100%{opacity:1;}
+    @keyframes type2 {
+        0% {
+            width: 0;
+        }
+        from {
+            opacity: 0;
+        }
+        1% {
+            opacity: 1;
+        }
+        to {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+        }
     }
-    @-webkit-keyframes type2{
-    0%{width: 0;}
-    from {opacity:0;}
-    1%{opacity:1;}
-    to{opacity:1;}
-    100%{opacity:1;}
+    @-webkit-keyframes type2 {
+        0% {
+            width: 0;
+        }
+        from {
+            opacity: 0;
+        }
+        1% {
+            opacity: 1;
+        }
+        to {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+        }
     }
-
-    @keyframes type3{
-      0%{width: 0;}
-      from {opacity:0;}
-    1%{opacity:1;}
-    to{opacity:1;}
-    100%{opacity:1;}
+    @keyframes type3 {
+        0% {
+            width: 0;
+        }
+        from {
+            opacity: 0;
+        }
+        1% {
+            opacity: 1;
+        }
+        to {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+        }
     }
-    @-webkit-keyframes type3{
-      0%{width: 0;}
-      from {opacity:0;}
-    1%{opacity:1;}
-    to{opacity:1;}
-    100%{opacity:1;}
+    @-webkit-keyframes type3 {
+        0% {
+            width: 0;
+        }
+        from {
+            opacity: 0;
+        }
+        1% {
+            opacity: 1;
+        }
+        to {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+        }
     }
-
-    @keyframes type4{
-      0%{width: 0;}
-      from {opacity:0;}
-    1%{opacity:1;}
-    to{opacity:1;}
-    100%{opacity:1;}
+    @keyframes type4 {
+        0% {
+            width: 0;
+        }
+        from {
+            opacity: 0;
+        }
+        1% {
+            opacity: 1;
+        }
+        to {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+        }
     }
-    @-webkit-keyframes type4{
-      0%{width: 0;}
-      from {opacity:0;}
-    1%{opacity:1;}
-    to{opacity:1;}
-    100%{opacity:1;}
+    @-webkit-keyframes type4 {
+        0% {
+            width: 0;
+        }
+        from {
+            opacity: 0;
+        }
+        1% {
+            opacity: 1;
+        }
+        to {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+        }
     }
-
 }
+
 
 /*Social Media*/
 
-.wrapper,.copyright {
+.wrapper,
+.copyright {
     padding: 20px;
     text-align: center;
 }
-hr{
+
+hr {
     margin: 30px 20px;
-    border-top:2px solid #1C1E26 ;
-    border-bottom:2px solid #38404D;
+    border-top: 2px solid #1C1E26;
+    border-bottom: 2px solid #38404D;
 }
+
 .list-unstyled {
     padding-left: 0;
     list-style: none;
 }
+
 .list-inline li {
     display: inline-block;
     padding-right: 5px;
     padding-left: 5px;
     margin-bottom: 10px;
 }
+
+
 /*---- Genral classes end -------*/
 
+
 /*Change icons size here*/
+
 .social-icons .fa {
     font-size: 1.8em;
 }
+
+
 /*Change icons circle size and color here*/
+
 .social-icons .fa {
     width: 50px;
     height: 50px;
@@ -310,68 +401,191 @@ hr{
     transition: all 0.3s ease-in-out;
 }
 
-.social-icons.icon-circle .fa{ 
+.social-icons.icon-circle .fa {
     border-radius: 50%;
 }
-.social-icons.icon-rounded .fa{
-    border-radius:5px;
+
+.social-icons.icon-rounded .fa {
+    border-radius: 5px;
 }
-.social-icons.icon-flat .fa{
+
+.social-icons.icon-flat .fa {
     border-radius: 0;
 }
 
-.social-icons .fa:hover, .social-icons .fa:active {
+.social-icons .fa:hover,
+.social-icons .fa:active {
     color: #FFF;
     -webkit-box-shadow: 1px 1px 3px #333;
     -moz-box-shadow: 1px 1px 3px #333;
-    box-shadow: 1px 1px 3px #333; 
+    box-shadow: 1px 1px 3px #333;
 }
-.social-icons.icon-zoom .fa:hover, .social-icons.icon-zoom .fa:active { 
+
+.social-icons.icon-zoom .fa:hover,
+.social-icons.icon-zoom .fa:active {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
-.social-icons.icon-rotate .fa:hover, .social-icons.icon-rotate .fa:active { 
+
+.social-icons.icon-rotate .fa:hover,
+.social-icons.icon-rotate .fa:active {
     -webkit-transform: scale(1.1) rotate(360deg);
     -moz-transform: scale(1.1) rotate(360deg);
     -ms-transform: scale(1.1) rotate(360deg);
     -o-transform: scale(1.1) rotate(360deg);
     transform: scale(1.1) rotate(360deg);
 }
- 
-.social-icons .fa-envelope{background-color: #0072c6;}
-.social-icons .fa-adn{background-color:#504e54;} 
-.social-icons .fa-apple{background-color:#aeb5c5;} 
-.social-icons .fa-android{background-color:#A5C63B;}  
-.social-icons .fa-bitbucket,.social-icons .fa-bitbucket-square{background-color:#003366;} 
-.social-icons .fa-bitcoin,.social-icons .fa-btc{background-color:#F7931A;} 
-.social-icons .fa-css3{background-color:#1572B7;} 
-.social-icons .fa-dribbble{background-color:#F46899;}  
-.social-icons .fa-dropbox{background-color:#018BD3;}
-.social-icons .fa-facebook,.social-icons .fa-facebook-square{background-color:#3C599F;}  
-.social-icons .fa-flickr{background-color:#FF0084;}
-.social-icons .fa-foursquare{background-color:#0086BE;}
-.social-icons .fa-github,.social-icons .fa-github-alt,.social-icons .fa-github-square{background-color:#070709;} 
-.social-icons .fa-google-plus,.social-icons .fa-google-plus-square{background-color:#CF3D2E;} 
-.social-icons .fa-html5{background-color:#E54D26;}
-.social-icons .fa-instagram{background-color:#A1755C;}
-.social-icons .fa-linkedin,.social-icons .fa-linkedin-square{background-color:#0085AE;} 
-.social-icons .fa-linux{background-color:#FBC002;color:#333;}
-.social-icons .fa-maxcdn{background-color:#F6AE1C;}
-.social-icons .fa-pagelines{background-color:#241E20;color:#3984EA;}
-.social-icons .fa-pinterest,.social-icons .fa-pinterest-square{background-color:#CC2127;} 
-.social-icons .fa-renren{background-color:#025DAC;}
-.social-icons .fa-skype{background-color:#01AEF2;}
-.social-icons .fa-stack-exchange{background-color:#245590;}
-.social-icons .fa-stack-overflow{background-color:#FF7300;}
-.social-icons .fa-trello{background-color:#265A7F;}
-.social-icons .fa-tumblr,.social-icons .fa-tumblr-square{background-color:#314E6C;} 
-.social-icons .fa-twitter,.social-icons .fa-twitter-square{background-color:#32CCFE;} 
-.social-icons .fa-vimeo-square{background-color:#229ACC;}
-.social-icons .fa-vk{background-color:#375474;}
-.social-icons .fa-weibo{background-color:#D72B2B;}
-.social-icons .fa-windows{background-color:#12B6F3;}
-.social-icons .fa-xing,.social-icons .fa-xing-square{background-color:#00555C;} 
-.social-icons .fa-youtube,.social-icons .fa-youtube-play,.social-icons .fa-youtube-square{background-color:#C52F30;}
+
+.social-icons .fa-envelope {
+    background-color: #0072c6;
+}
+
+.social-icons .fa-adn {
+    background-color: #504e54;
+}
+
+.social-icons .fa-apple {
+    background-color: #aeb5c5;
+}
+
+.social-icons .fa-android {
+    background-color: #A5C63B;
+}
+
+.social-icons .fa-bitbucket,
+.social-icons .fa-bitbucket-square {
+    background-color: #003366;
+}
+
+.social-icons .fa-bitcoin,
+.social-icons .fa-btc {
+    background-color: #F7931A;
+}
+
+.social-icons .fa-css3 {
+    background-color: #1572B7;
+}
+
+.social-icons .fa-dribbble {
+    background-color: #F46899;
+}
+
+.social-icons .fa-dropbox {
+    background-color: #018BD3;
+}
+
+.social-icons .fa-facebook,
+.social-icons .fa-facebook-square {
+    background-color: #3C599F;
+}
+
+.social-icons .fa-flickr {
+    background-color: #FF0084;
+}
+
+.social-icons .fa-foursquare {
+    background-color: #0086BE;
+}
+
+.social-icons .fa-github,
+.social-icons .fa-github-alt,
+.social-icons .fa-github-square {
+    background-color: #070709;
+}
+
+.social-icons .fa-google-plus,
+.social-icons .fa-google-plus-square {
+    background-color: #CF3D2E;
+}
+
+.social-icons .fa-html5 {
+    background-color: #E54D26;
+}
+
+.social-icons .fa-instagram {
+    background-color: #A1755C;
+}
+
+.social-icons .fa-linkedin,
+.social-icons .fa-linkedin-square {
+    background-color: #0085AE;
+}
+
+.social-icons .fa-linux {
+    background-color: #FBC002;
+    color: #333;
+}
+
+.social-icons .fa-maxcdn {
+    background-color: #F6AE1C;
+}
+
+.social-icons .fa-pagelines {
+    background-color: #241E20;
+    color: #3984EA;
+}
+
+.social-icons .fa-pinterest,
+.social-icons .fa-pinterest-square {
+    background-color: #CC2127;
+}
+
+.social-icons .fa-renren {
+    background-color: #025DAC;
+}
+
+.social-icons .fa-skype {
+    background-color: #01AEF2;
+}
+
+.social-icons .fa-stack-exchange {
+    background-color: #245590;
+}
+
+.social-icons .fa-stack-overflow {
+    background-color: #FF7300;
+}
+
+.social-icons .fa-trello {
+    background-color: #265A7F;
+}
+
+.social-icons .fa-tumblr,
+.social-icons .fa-tumblr-square {
+    background-color: #314E6C;
+}
+
+.social-icons .fa-twitter,
+.social-icons .fa-twitter-square {
+    background-color: #32CCFE;
+}
+
+.social-icons .fa-vimeo-square {
+    background-color: #229ACC;
+}
+
+.social-icons .fa-vk {
+    background-color: #375474;
+}
+
+.social-icons .fa-weibo {
+    background-color: #D72B2B;
+}
+
+.social-icons .fa-windows {
+    background-color: #12B6F3;
+}
+
+.social-icons .fa-xing,
+.social-icons .fa-xing-square {
+    background-color: #00555C;
+}
+
+.social-icons .fa-youtube,
+.social-icons .fa-youtube-play,
+.social-icons .fa-youtube-square {
+    background-color: #C52F30;
+}
