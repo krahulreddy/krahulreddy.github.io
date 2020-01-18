@@ -94,6 +94,9 @@ h2 {
 }
 
 @media (max-width:480px) {
+    #logo {
+        visibility: hidden;
+    }
     .section1 {
         margin-top: 120%;
     }
