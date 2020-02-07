@@ -95,9 +95,12 @@ h2 {
         display: none;
     }
     .section1 {
+        margin-top: 70vh;
+    }
+    .section1,
+    .section {
         padding-left: 0 !important;
         margin-left: 0 !important;
-        margin-top: 70vh;
     }
 }
 
