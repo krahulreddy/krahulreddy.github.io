@@ -88,13 +88,26 @@ h2 {
 }
 
 @media (min-width:481px) {
+    #description1 {
+        display: block;
+    }
+    #description2 {
+        display: none;
+    }
     .section1 {
         margin-top: 50%;
     }
 }
 
 @media (max-width:480px) {
+    #description1 {
+        display: none;
+    }
+    #description2 {
+        display: block !important;
+    }
     #logo {
+        display: none;
         visibility: hidden;
     }
     .section1 {
