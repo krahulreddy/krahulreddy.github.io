@@ -95,7 +95,9 @@ h2 {
         display: none;
     }
     .section1 {
-        margin-top: 50%;
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+        margin-top: 70vh;
     }
 }
 
