@@ -126,10 +126,10 @@ h2 {
 @media(min-width: 479px) {
     .card-img-top {
         width: 100%;
-        height: 35vh !important;
+        height: 26vh !important;
     }
     .card {
-        height: 470px !important;
+        height: 500px !important;
     }
 }
 
