@@ -92,8 +92,9 @@
                     <audio id="music">
                         <source src="images/download.mp3" type="audio/mpeg">
                     </audio>
-                    <a onclick="if(document.getElementById('music').paused) document.getElementById('music').play(); else document.getElementById('music').pause();">
-                        <img class="card-img-top" src="images/bg.png" alt="Card image" style="width:100%">
+                <a onclick="if(document.getElementById('music').paused) { document.getElementById('music').play(); document.getElementById('play-button').removeAttribute('play-btn'); } else { document.getElementById('music').pause(); document.getElementById('play-button').addAttribute('play-btn'); }">
+                        <!-- <img class="card-img-top" src="images/bg.png" alt="Card image" style="width:100%"> -->
+                        <button id="play-button" class='card-img-top play'></button>
                     </a>
                     <a href="https://github.com/krahulreddy/Music-Generation" target="_blank">
                         <div class="card-body text-center">

@@ -1,22 +1,21 @@
-.center{
-    width:80%;
+.center {
+    width: 80%;
     /* height: 80%; */
     margin: 10%;
     /* margin-top: 30%; */
     /* margin: auto; */
-    
 }
 
-.body{
+.body {
     background-color: #fff;
 }
 
-.white{
+.white {
     color: #fff;
 }
 
-.img{
-    margin:auto;
+.img {
+    margin: auto;
     margin-top: 5%;
     margin-bottom: 5%;
 }
