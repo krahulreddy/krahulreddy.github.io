@@ -1,2 +1,3 @@
-Work in Progress.<br>
-Something big is coming soon....
+Hi!
+
+This is my personal website!
