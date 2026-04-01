@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K Rahul Reddy | AI Explorer</title>
+    <meta name="description" content="10 Creative AI Projects — Interactive demos exploring cutting-edge AI APIs. By K Rahul Reddy, SE2 @ Microsoft Azure Compute.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../images/bg.png">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">KRR<span>.ai</span></a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="https://github.com/krahulreddy" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/k-rahul-reddy" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge"><span class="pulse-dot"></span> AI Explorer</div>
+            <h1 class="hero-name">K Rahul Reddy</h1>
+            <p class="hero-role">SE2 @ <span class="ms">Microsoft</span> Azure Compute</p>
+            <p class="hero-typed" id="hero-typed"></p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn-primary">Explore Projects ↓</a>
+                <a href="https://github.com/krahulreddy" target="_blank" class="btn-ghost"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+        <div class="scroll-indicator"><span>scroll</span><div class="scroll-line"></div></div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title fade-in">About</h2>
+            <div class="about-grid fade-in">
+                <div class="about-text">
+                    <p class="lead">Building cloud infrastructure by day. Exploring AI frontiers by night.</p>
+                    <p>I'm a Software Engineer 2 at <strong>Microsoft Azure Compute</strong>, working on <strong>Ephemeral OS Disks</strong> — the infrastructure powering millions of cloud workloads worldwide. With a Computer Science degree from NIT Karnataka and a deep passion for machine learning, I constantly explore new AI APIs, models, and paradigms.</p>
+                    <p>This site is my laboratory — <strong>10 interactive AI experiments</strong> built with cutting-edge APIs like MediaPipe, TensorFlow.js, Transformers.js, and more. Every demo runs <em>entirely in your browser</em>. No backend. No API keys. Just pure client-side AI.</p>
+                </div>
+                <div class="about-tech">
+                    <h3>APIs &amp; Libraries I Explore</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag"><i class="fas fa-brain"></i> TensorFlow.js</span>
+                        <span class="tech-tag"><i class="fas fa-eye"></i> MediaPipe</span>
+                        <span class="tech-tag"><i class="fas fa-robot"></i> Transformers.js</span>
+                        <span class="tech-tag"><i class="fas fa-music"></i> Web Audio API</span>
+                        <span class="tech-tag"><i class="fas fa-code"></i> WebGL / Canvas</span>
+                        <span class="tech-tag"><i class="fas fa-cube"></i> ONNX Runtime</span>
+                        <span class="tech-tag"><i class="fas fa-bolt"></i> WebGPU</span>
+                        <span class="tech-tag"><i class="fas fa-network-wired"></i> WASM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title fade-in">10 Creative AI Projects</h2>
+            <p class="section-sub fade-in">Each project explores a different AI concept with a live interactive demo. Click any card to launch.</p>
+            <div class="projects-grid">
+
+                <div class="project-card fade-in" onclick="openDemo('nca')">
+                    <div class="card-visual" style="--c1:#00b894;--c2:#00cec9">
+                        <div class="card-icon">🧬</div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-cat">Emergent AI</span>
+                        <h3>Neural Cellular Automata</h3>
+                        <p>Self-organizing pixel patterns that grow, regenerate, and evolve like living organisms.</p>
+                        <div class="card-techs"><span>Canvas API</span><span>Neural Networks</span><span>Pure JS</span></div>
+                    </div>
+                    <div class="card-footer"><span class="demo-link">Launch Demo <i class="fas fa-arrow-right"></i></span></div>
+                </div>
+
+                <div class="project-card fade-in" onclick="openDemo('maze')">
+                    <div class="card-visual" style="--c1:#6c5ce7;--c2:#a29bfe">
+                        <div class="card-icon">🤖</div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-cat">Reinforcement Learning</span>
+                        <h3>RL Maze Solver</h3>
+                        <p>Watch a Q-learning agent discover the optimal path, learning from every step it takes.</p>
+                        <div class="card-techs"><span>Q-Learning</span><span>Canvas API</span><span>Pure JS</span></div>
+                    </div>
+                    <div class="card-footer"><span class="demo-link">Launch Demo <i class="fas fa-arrow-right"></i></span></div>
+                </div>
+
+                <div class="project-card fade-in" onclick="openDemo('melody')">
+                    <div class="card-visual" style="--c1:#fd79a8;--c2:#e84393">
+                        <div class="card-icon">🎵</div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-cat">Generative AI</span>
+                        <h3>AI Melody Composer</h3>
+                        <p>A Markov chain trained on music theory generates original melodies note by note.</p>
+                        <div class="card-techs"><span>Web Audio</span><span>Markov Chains</span><span>Music Theory</span></div>
+                    </div>
+                    <div class="card-footer"><span class="demo-link">Launch Demo <i class="fas fa-arrow-right"></i></span></div>
+                </div>
+
+                <div class="project-card fade-in" onclick="openDemo('hands')">
+                    <div class="card-visual" style="--c1:#00cec9;--c2:#81ecec">
+                        <div class="card-icon">✋</div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-cat">Computer Vision</span>
+                        <h3>Hand Tracking Lab</h3>
+                        <p>Real-time 21-point hand landmark detection. Move your fingers to create particle trails.</p>
+                        <div class="card-techs"><span>MediaPipe Hands</span><span>Canvas API</span></div>
+                    </div>
+                    <div class="card-footer"><span class="demo-link">Launch Demo <i class="fas fa-arrow-right"></i></span></div>
+                </div>
+
+                <div class="project-card fade-in" onclick="openDemo('face')">
+                    <div class="card-visual" style="--c1:#a29bfe;--c2:#6c5ce7">
+                        <div class="card-icon">🎭</div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-cat">Face Analysis</span>
+                        <h3>Face Mesh Explorer</h3>
+                        <p>468 facial landmarks mapped in real-time. Smile, frown, raise eyebrows — AI sees it all.</p>
+                        <div class="card-techs"><span>MediaPipe Face Mesh</span><span>Canvas API</span></div>
+                    </div>
+                    <div class="card-footer"><span class="demo-link">Launch Demo <i class="fas fa-arrow-right"></i></span></div>
+                </div>
+
+                <div class="project-card fade-in" onclick="openDemo('pose')">
+                    <div class="card-visual" style="--c1:#ffeaa7;--c2:#fdcb6e">
+                        <div class="card-icon">🏃</div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-cat">Pose Estimation</span>
+                        <h3>Body Pose Engine</h3>
+                        <p>Full body skeleton tracking with 33 landmarks. Your movement drives the visualization.</p>
+                        <div class="card-techs"><span>MediaPipe Pose</span><span>Canvas API</span></div>
+                    </div>
+                    <div class="card-footer"><span class="demo-link">Launch Demo <i class="fas fa-arrow-right"></i></span></div>
+                </div>
+
+                <div class="project-card fade-in" onclick="openDemo('objdet')">
+                    <div class="card-visual" style="--c1:#ff7675;--c2:#d63031">
+                        <div class="card-icon">📦</div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-cat">Object Detection</span>
+                        <h3>Object Detector</h3>
+                        <p>Point your camera at anything — AI identifies and labels objects with bounding boxes in real-time.</p>
+                        <div class="card-techs"><span>TensorFlow.js</span><span>COCO-SSD</span><span>Canvas</span></div>
+                    </div>
+                    <div class="card-footer"><span class="demo-link">Launch Demo <i class="fas fa-arrow-right"></i></span></div>
+                </div>
+
+                <div class="project-card fade-in" onclick="openDemo('teach')">
+                    <div class="card-visual" style="--c1:#55efc4;--c2:#00b894">
+                        <div class="card-icon">🧠</div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-cat">Transfer Learning</span>
+                        <h3>Teachable Machine</h3>
+                        <p>Train your own image classifier in 60 seconds. Show objects, label them, AI learns live.</p>
+                        <div class="card-techs"><span>TensorFlow.js</span><span>MobileNet</span><span>Transfer Learning</span></div>
+                    </div>
+                    <div class="card-footer"><span class="demo-link">Launch Demo <i class="fas fa-arrow-right"></i></span></div>
+                </div>
+
+                <div class="project-card fade-in" onclick="openDemo('sentiment')">
+                    <div class="card-visual" style="--c1:#fd79a8;--c2:#fab1a0">
+                        <div class="card-icon">💬</div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-cat">NLP</span>
+                        <h3>Sentiment Analyzer</h3>
+                        <p>Type any text and watch a transformer model analyze the emotional tone in real-time.</p>
+                        <div class="card-techs"><span>Transformers.js</span><span>DistilBERT</span><span>WASM</span></div>
+                    </div>
+                    <div class="card-footer"><span class="demo-link">Launch Demo <i class="fas fa-arrow-right"></i></span></div>
+                </div>
+
+                <div class="project-card fade-in" onclick="openDemo('depth')">
+                    <div class="card-visual" style="--c1:#74b9ff;--c2:#0984e3">
+                        <div class="card-icon">🌊</div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-cat">Depth Estimation</span>
+                        <h3>Depth Estimator</h3>
+                        <p>Upload any 2D photo and AI generates a depth map, revealing the hidden 3D structure.</p>
+                        <div class="card-techs"><span>Transformers.js</span><span>Depth Anything</span><span>Canvas</span></div>
+                    </div>
+                    <div class="card-footer"><span class="demo-link">Launch Demo <i class="fas fa-arrow-right"></i></span></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="demo-modal" class="modal hidden">
+        <div class="modal-backdrop" onclick="closeDemo()"></div>
+        <div class="modal-dialog">
+            <div class="modal-head">
+                <div>
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-desc" class="modal-desc"></p>
+                </div>
+                <button class="modal-close" onclick="closeDemo()"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="modal-body" class="modal-body"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-inner">
+            <div>
+                <p class="footer-brand">KRR<span>.ai</span></p>
+                <p class="footer-tagline">Exploring AI frontiers, one experiment at a time.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/krahulreddy" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/k-rahul-reddy" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:k_rahul_reddy@outlook.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2026 K Rahul Reddy &middot; All demos run client-side &middot; No data leaves your browser</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
