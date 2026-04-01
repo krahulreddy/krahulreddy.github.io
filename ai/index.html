@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K Rahul Reddy | AI Radar Lab</title>
+  <meta name="description" content="Interactive AI Radar Lab by K Rahul Reddy — live AI APIs, research signals, model trends, and practical AI experiments.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="../">KRR</a>
+    <nav>
+      <a href="#radar">Radar</a>
+      <a href="#lab">Lab</a>
+      <a href="#signals">Signals</a>
+      <a href="https://github.com/krahulreddy" target="_blank" rel="noreferrer">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="chip">AI Radar Lab / Static + Client-Side</p>
+      <h1>Building Practical AI at the Edge of What’s Next</h1>
+      <p class="subtitle">
+        I’m <strong>K Rahul Reddy</strong>, SE2 at <strong>Microsoft Azure Compute</strong> (Ephemeral OS Disks).  
+        This page tracks what I explore in AI APIs, models, and product ideas — with live interactive modules.
+      </p>
+      <div class="hero-metrics">
+        <div><span id="metric-apis">0</span><small>Live APIs active</small></div>
+        <div><span id="metric-last-refresh">--</span><small>Last refresh</small></div>
+        <div><span id="metric-capabilities">0</span><small>Browser AI capabilities</small></div>
+      </div>
+      <div class="hero-actions">
+        <button id="refresh-all" class="btn primary">Refresh Live Signals</button>
+        <a class="btn ghost" href="../home/">Open /home Interactive Demos</a>
+      </div>
+    </section>
+
+    <section id="radar" class="grid two">
+      <article class="card">
+        <h2>AI Pulse Feed</h2>
+        <p>Live AI trend headlines from public community data.</p>
+        <p class="meta">API: Hacker News Algolia</p>
+        <div class="status" id="pulse-status">Loading...</div>
+        <ul id="pulse-list" class="feed"></ul>
+      </article>
+
+      <article class="card">
+        <h2>Model Radar</h2>
+        <p>Explore trending public model metadata and tags.</p>
+        <p class="meta">API: Hugging Face Hub</p>
+        <div class="status" id="models-status">Loading...</div>
+        <ul id="models-list" class="feed"></ul>
+      </article>
+    </section>
+
+    <section id="signals" class="grid one">
+      <article class="card">
+        <h2>Research Signal Scanner</h2>
+        <p>Recent AI papers and concepts from open scholarly APIs.</p>
+        <p class="meta">API: OpenAlex (with local fallback)</p>
+        <div class="status" id="research-status">Loading...</div>
+        <div id="research-list" class="research-list"></div>
+      </article>
+    </section>
+
+    <section id="lab" class="grid two">
+      <article class="card">
+        <h2>Prompt Refiner</h2>
+        <p>Interactive local prompt optimizer that applies structured prompting principles.</p>
+        <p class="meta">Concept: Prompt Engineering</p>
+        <label class="label" for="prompt-input">Your rough prompt</label>
+        <textarea id="prompt-input" rows="5" placeholder="e.g., write something about cloud and AI"></textarea>
+        <div class="controls">
+          <select id="prompt-mode">
+            <option value="engineer">Engineering assistant</option>
+            <option value="product">Product strategy assistant</option>
+            <option value="research">Research analysis assistant</option>
+          </select>
+          <button class="btn primary" id="refine-prompt">Refine Prompt</button>
+        </div>
+        <label class="label" for="prompt-output">Refined prompt</label>
+        <textarea id="prompt-output" rows="8" readonly></textarea>
+      </article>
+
+      <article class="card">
+        <h2>Token + Cost Lab</h2>
+        <p>Estimate token usage and rough API cost for common model tiers.</p>
+        <p class="meta">Concept: AI system economics</p>
+        <label class="label" for="cost-text">Input text</label>
+        <textarea id="cost-text" rows="5" placeholder="Paste user input / prompt / draft response..."></textarea>
+        <div class="controls">
+          <select id="cost-model">
+            <option value="small">Small model tier ($0.15 / 1M in, $0.60 / 1M out)</option>
+            <option value="mid">Mid model tier ($3.00 / 1M in, $15.00 / 1M out)</option>
+            <option value="large">Large model tier ($15.00 / 1M in, $75.00 / 1M out)</option>
+          </select>
+          <button class="btn primary" id="estimate-cost">Estimate</button>
+        </div>
+        <div id="cost-output" class="result-box">Run estimate to see token and cost breakdown.</div>
+      </article>
+    </section>
+
+    <section class="grid two">
+      <article class="card">
+        <h2>Capability Detector</h2>
+        <p>Proof this site adapts to browser AI capabilities.</p>
+        <p class="meta">Concept: Progressive enhancement</p>
+        <ul id="cap-list" class="cap-list"></ul>
+      </article>
+
+      <article class="card">
+        <h2>What This Shows</h2>
+        <p>Each module is intentionally interactive and tied to a concrete AI concept.</p>
+        <ul class="proof-list">
+          <li><strong>Live Signals:</strong> Pulling fresh AI trend and research data from public APIs.</li>
+          <li><strong>Practical Engineering:</strong> Fallback datasets, caching, retries, and clear API status.</li>
+          <li><strong>Applied AI Thinking:</strong> Prompt quality and inference cost tooling, not just static demos.</li>
+          <li><strong>Role Alignment:</strong> Systems mindset from Azure Compute applied to real AI product tradeoffs.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 K Rahul Reddy · AI Radar Lab (/ai)</p>
+    <p class="privacy">Privacy: requests are made directly from your browser to public APIs. No secrets are embedded server-side.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
